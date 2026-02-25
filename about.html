@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HOMEUS | Architecture & Design</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+body{
+    background:#f3f4f6;
+    color:#2b2b2b;
+    line-height:1.6;
+}
+nav{
+    background:rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+    border-bottom:1px solid #e0e0e0;
+    padding:18px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+nav h1{
+    font-size:1.7rem;
+    letter-spacing:3px;
+    color:#2b2b2b;
+}
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+nav a:hover{
+    color:#b89b5e;
+}
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg") center/cover;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 80px;
+}
+.hero h2{
+    font-size:3.2rem;
+    max-width:750px;
+}
+.hero p{
+    margin-top:20px;
+    max-width:550px;
+    font-size:1.05rem;
+    opacity:0.9;
+}
+.section{
+    margin:70px auto;
+    max-width:1200px;
+    padding:70px;
+    background:white;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+.section h3{
+    margin-bottom:25px;
+    font-size:2rem;
+    letter-spacing:1px;
+}
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:35px;
+}
+.step{
+    background:#fafafa;
+    padding:25px;
+    border-radius:10px;
+    border-left:6px solid #b89b5e;
+}
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.projects img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.4s;
+}
+.projects img:hover{
+    transform:scale(1.04);
+}
+.team{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+.member{
+    background:#fafafa;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+.member img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+.testimonial{
+    background:
+    linear-gradient(135deg,#f5f5f5,#ffffff);
+    padding:50px;
+    border-left:6px solid #b89b5e;
+    font-style:italic;
+}
+.contact{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+}
+input,textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:0.95rem;
+}
+button{
+    padding:14px 30px;
+    background:#b89b5e;
+    border:none;
+    color:white;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-radius:6px;
+    cursor:pointer;
+}
+button:hover{
+    background:#a58950;
+}
+footer{
+    background:#111;
+    color:#ddd;
+    text-align:center;
+    padding:25px;
+    margin-top:80px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>HOMEUS</h1>
+    <div>
+        <a href="#studio">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h2>Architecture shaped by purpose,<br>context and people.</h2>
+    <p>
+        Thoughtful architecture that balances aesthetics, sustainability,
+        and human experience.
+    </p>
+</section>
+
+<section class="section" id="studio">
+    <h3>Our Studio</h3>
+    <p>
+        HOMEUS is a contemporary architecture and interior design practice
+        focused on crafting spaces that respond to climate, culture, and lifestyle.
+    </p>
+</section>
+
+<section class="section" id="process">
+    <h3>Design Process</h3>
+    <div class="process">
+        <div class="step">
+            <h4>Research</h4>
+            <p>Understanding site, climate and user needs.</p>
+        </div>
+        <div class="member">
+            <h4>Concept</h4>
+            <p>Developing spatial ideas and design intent.</p>
+        </div>
+        <div class="step">
+            <h4>Design</h4>
+            <p>Material selection, drawings and detailing.</p>
+        </div>
+        <div class="step">
+            <h4>Execution</h4>
+            <p>Site coordination and quality control.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section class="section" id="projects">
+    <h3>Selected Projects</h3>
+    <div class="projects">
+        <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg">
+        <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg">
+        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg">
+
+        <!-- ADDED ONE MORE IMAGE -->
+        <img src="https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg">
+    </div>
+</section>
+
+<!-- OUR TEAM -->
+<section class="section" id="team">
+    <h3>Our Team</h3>
+    <div class="team">
+        <div class="member">
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg">
+            <h4>Lead Architect</h4>
+            <p>Design & Planning</p>
+        </div>
+
+        <div class="member">
+            <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg">
+            <h4>Interior Designer</h4>
+            <p>Materials & Styling</p>
+        </div>
+
+        <div class="member">
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg">
+            <h4>Project Manager</h4>
+            <p>Execution & Quality</p>
+        </div>
+
+        <!-- ADDED ONE MORE TEAM MEMBER -->
+        <div class="member">
+            <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg">
+            <h4>Landscape Designer</h4>
+            <p>Outdoor & Environment</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="testimonial">
+        “HOMEUS translated our ideas into a refined, functional
+        and timeless design that truly reflects our lifestyle.”
+        <br><br>
+        <strong>— Residential Client</strong>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact">
+        <form>
+            <input type="text" id="n" placeholder="Full Name">
+            <input type="email" id="e" placeholder="Email Address">
+            <textarea id="m" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </form>
+
+        <div>
+            <p><strong>Studio:</strong> JVPD Juhu, Vile parle, India</p>
+            <p><strong>Email:</strong> studio@homeus.com</p>
+            <p><strong>Phone:</strong> +91 9167674532</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 HOMEUS | Architecture & Design
+</footer>
+
+</body>
+</html>
